@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+}
+
+.gradient-font {
+    background-image: linear-gradient(to left, turquoise, steelblue, rebeccapurple);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #171717;
+}
+
+.container {
+    width: auto;
+    margin: auto;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.logo-img {
+    width: 45px;
+    height: 45px;
+    opacity: 0.1;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section h2 {
+    text-align: center;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    flex-wrap: wrap;
+    height: auto;
+    font-size: large;
+    text-align: center;
+}
+
+.bio img {
+    width: 300px;
+    margin-bottom: 5%;
+    border: 1px solid transparent;
+    background-image: linear-gradient(black, black), linear-gradient(to left, turquoise, steelblue, rebeccapurple);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border-radius: 10px;
+}
+
+.border {
+    border: 1px solid transparent;
+    background-image: linear-gradient(black, black), linear-gradient(to left, turquoise, steelblue, rebeccapurple);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border-radius: 10px;
+
+    width: 35vw;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 20px;
+    font-size: medium;
+}
+
+.sub-section {
+    display: flex;
+}
+
+.intro {
+    margin-bottom: 5%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 9vh;
+}
+
+footer a {
+    margin: 5px;
+}
+
+footer a:hover {
+    transform: scale(1.15);
+    transition: all .5s ease;
+}
+
+@media (max-width: 420px) {
+
+    .container h1 {
+        font-size: x-large;
+    }
+
+    .container {
+        padding: 10px;
+        flex-wrap: wrap;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .bio {
+        flex-wrap: wrap;
+    }
+
+    .sub-section {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .border {
+        width: auto;
+    }
+
+    .bio img {
+        width: 200px;
+    }
+}
+
+
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: black turquoise;
+}
+
+/* Chrome, Edge, Safari */
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: black;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to top, turquoise, steelblue, rebeccapurple);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border-radius: 10px;
+}
